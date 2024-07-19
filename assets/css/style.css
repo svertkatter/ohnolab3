@@ -1,0 +1,53 @@
+:root {
+    --main-color: #373C38;
+    --accent-color: #005BAC;
+    --base-color: #E3E7EA;
+    --section-margin: 2em;
+    --section-gap: 5em;
+    --page-padding: 5em;
+}
+
+body{
+    font-family: "IBM Plex Sans JP", sans-serif;
+    background: var(--base-color);
+    color: var(--main-color);
+}
+
+ul li{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.logo{
+    width:20%;
+    height: auto;
+    filter: invert(13%) sepia(99%) saturate(7480%) hue-rotate(198deg) brightness(95%) contrast(103%);
+
+
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background: rgb(236, 240, 242, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 1em var(--page-padding);
+    border-bottom: 0.5px solid rgb(82, 86, 83, 0.2);
+    font-size: 14px;
+    z-index: 2;
+}
+
+.nav {
+    justify-content: space-between;
+}
+
+.list {
+    align-items: center;
+}
+
+.list li {
+    margin-left: 20px;
+}
