@@ -50,5 +50,5 @@ export default defineNuxtConfig({
       '@/assets/css/style.css'
     ],
 
-    modules: ["@nuxt/image"]
+    modules: ["@nuxt/image"],
 })
