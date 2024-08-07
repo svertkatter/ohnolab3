@@ -91,6 +91,15 @@
                 <h2>Room</h2>
                 <p>研究室の様子</p>
             </div>
+
+            <div class="room-section">
+                <p class="blue-title">みなさんの生活環境にも気を遣っています</p>
+                <div class="room-img"><NuxtImg src="/img/room/room01.webp"/></div>
+            </div>
+
+            <div class="more">
+                <MoreButton text="Room" link="/room"/>
+            </div>
         </div>
 
         <div class="section">

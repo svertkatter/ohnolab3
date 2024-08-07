@@ -189,6 +189,15 @@ img{
     font-weight: 700;
 }
 
+.room-img{
+    margin-top: 2em;
+    
+    img{
+        width: 60%;
+        height: 100%;
+    }
+}
+
 .blue-title{
     font-size: 25px;
     font-weight: 700;
