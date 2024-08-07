@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
             <div class="footerlist">
-                <h1 class="cont">
+                <h1 class="cont logo-area">
                     <NuxtLink to="/">
                         <NuxtImg class="logo" src="/img/logo/ohnologo-withtype.svg" alt="大野研究室ロゴ"/>
                     </NuxtLink>

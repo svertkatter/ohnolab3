@@ -235,8 +235,12 @@ img{
     }
 
     .logo{
-        width: 7%;
+        width: 100%;
         height: auto;
+    }
+    
+    .logo-area {
+        width: 7%;
     }
 }
 
