@@ -82,7 +82,7 @@
             </div>
 
             <div class="more">
-                <MoreButton text="Member" link="/member"/>
+                <MoreButton text="Member" link="/members"/>
             </div>
         </div>
 
