@@ -65,6 +65,30 @@ li{
     margin-left: 20px;
 }
 
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 0 var(--page-padding);
+  }
+
+.top{
+    width: 100%;
+    position: relative;
+    height: calc(100dvh - 10em);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 2;
+}
+
+.top p{
+    padding-bottom: 4%;
+}
+
+.top p:last-child{
+    padding: 0;
+}
+
 .footer {
     position: relative;
     background: rgb(236, 240, 242, 0.6);
