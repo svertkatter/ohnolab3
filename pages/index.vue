@@ -107,6 +107,22 @@
                 <h2>Access</h2>
                 <p>アクセス</p>
             </div>
+
+            <div class="access-section">
+                <p class="blue-title">研究室へのアクセス</p>
+                <div class="map-img"><NuxtImg src="/img/access/map.webp"/></div>
+                <div class="access-content">
+                    <p>大分大学旦野原キャンパスの理工13号館（30番）2階にあります。お気軽にご訪問ください。</p>
+                    <div class="access-room">
+                        <p>准教授室：207号室</p>
+                        <p>技 官 室：205号室</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more">
+                <MoreButton text="Room" link="/room"/>
+            </div>
         </div>
 
     </div>
