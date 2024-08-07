@@ -1,6 +1,6 @@
 <template>
     <div class="moreButton">
-      <NuxtLink to="/researches" class="buttonLink">
+      <NuxtLink :to="link" class="buttonLink">
         <p>More {{ text }}</p>
         <span class="arrowRight"></span>
       </NuxtLink>
@@ -11,6 +11,7 @@
   import { defineProps } from 'vue';
   
   const props = defineProps({
-    text: String
+    text: String,
+    link: String
   });
   </script>

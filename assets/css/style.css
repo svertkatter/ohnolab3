@@ -38,6 +38,10 @@ a:hover{
     transition: all .3s;
 }
 
+img{
+    border-radius: 8px;
+}
+
 .flex{
     display: flex;
 }
@@ -197,6 +201,10 @@ a:hover{
     &:hover {
         opacity: 0.5;
         transition: .3s all;
+    }
+
+    a{
+        color: var(--base-color);
     }
 }
 
