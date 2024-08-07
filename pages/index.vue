@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <article class="container">
         <div class="top">
             <p>理工学科 電気エネルギー・電子工学プログラム<br />電子デバイス工学</p>
             <p>ようこそ、大野研究室へ。</p>
@@ -125,5 +125,5 @@
             </div>
         </div>
 
-    </div>
+    </article>
 </template>
