@@ -13,8 +13,15 @@ body{
     color: var(--main-color);
 }
 
-ul li{
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .flex{
@@ -51,7 +58,7 @@ ul li{
     align-items: center;
 }
 
-.list li {
+.header .list li {
     margin-left: 20px;
 }
 
