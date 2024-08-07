@@ -275,12 +275,25 @@ img{
     transition: .3s all;
 
     &:hover {
-        opacity: 0.5;
+        color: var(--main-color);
+        background-color: var(--base-color);
+        opacity: 1;
         transition: .3s all;
+        border: var(--main-color) solid 0.5px;
+    }
+
+    &:hover .arrowRight{
+        width: 10em;
+        color: var(--main-color);
+
     }
 
     a{
         color: var(--base-color);
+
+        &:hover {
+            color: var(--main-color);
+        }
     }
 }
 
