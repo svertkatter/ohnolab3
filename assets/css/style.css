@@ -11,6 +11,9 @@ body{
     font-family: "IBM Plex Sans JP", sans-serif;
     background: var(--base-color);
     color: var(--main-color);
+    overflow-wrap: anywhere; /* 収まらない場合に折り返す */
+    word-break: normal; /* 単語の分割はデフォルトに依存 */
+    line-break: strict; /* 禁則処理を厳格に適用 */
 }
 
 ul{
