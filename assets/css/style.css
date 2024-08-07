@@ -89,10 +89,14 @@ li{
     padding: 0;
 }
 
+.section {
+    margin-top: 10em;
+}
+
 .footer {
     position: relative;
     background: rgb(236, 240, 242, 0.6);
-    padding: 3% 3%;
+    padding: 3% var(--page-padding);
     margin-top: 20%;
     z-index: 2;
 }
