@@ -45,9 +45,15 @@
                 content="マスク交換システムおよびプラズマ源付き電子ビーム薄膜蒸着装置で、試料を大気中に一度も暴露させずに（＝汚れない）パターニングされたデバイスを作製可能です。"
                 imageSrc="/img/equi/zu1/1-1.webp"
                 />
-                <div>
-                    <MoreButton text="Equipments" link="/equipments"/>
-                </div>
+
+                <EquipmentsCard
+                title="fAオーダーまで測定可能な電気計測装置"
+                content="半導体の電気計測装置としては最も高性能な製品を用いています。2台保有しています。"
+                imageSrc="/img/equi/zu2/zu2-1.webp"
+                />
+            </div>
+            <div class="more">
+                <MoreButton text="Equipments" link="/equipments"/>
             </div>
         </div>
 
