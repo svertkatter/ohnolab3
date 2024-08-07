@@ -168,7 +168,8 @@ img{
     margin-top: 2em;
 }
 
-.member-section{
+.member-section,
+.room-section{
     margin-top: var(--section-margin);
 }
 
