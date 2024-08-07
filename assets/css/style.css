@@ -48,11 +48,6 @@ a:hover{
     filter: invert(13%) sepia(99%) saturate(7480%) hue-rotate(198deg) brightness(95%) contrast(103%);
 }
 
-.footer .logo{
-    width: 7%;
-    height: auto;
-}
-
 .header {
     position: relative;
     width: 100%;
@@ -62,6 +57,12 @@ a:hover{
     border-bottom: 0.5px solid rgb(82, 86, 83, 0.2);
     font-size: 14px;
     z-index: 2;
+
+    .list{
+        li{
+            margin-left: 20px;
+        }
+    }
 }
 
 .nav {
@@ -72,17 +73,13 @@ a:hover{
     align-items: center;
 }
 
-.header .list li {
-    margin-left: 20px;
-}
-
 .container {
     position: relative;
     z-index: 1;
     padding: 0 var(--page-padding);
-  }
+}
 
-  .top {
+.top {
     width: 100%;
     position: relative;
     height: calc(100dvh - 10em);
@@ -133,16 +130,9 @@ a:hover{
     }
 }
 
-.paper-author {
-    margin-top: 1em;
-}
-
-.paper-publish {
-    margin-top: 1em;
-}
-
 .paper-author,
 .paper-publish {
+    margin-top: 1em;
     font-size: 0.9em;
 }
 
@@ -166,18 +156,23 @@ a:hover{
             margin-bottom: 10%;
         }
     }
+
+    .logo{
+        width: 7%;
+        height: auto;
+    }
 }
 
 .cont {
     padding-bottom: 5%;
-}
 
-.cont:last-child {
-    padding: 0;
-}
-
-.cont p {
-    margin-bottom: 2%;
+    &:last-child {
+        padding: 0;
+    }
+    
+    p{
+        margin-bottom: 2%;
+    }
 }
 
 .background {
@@ -188,7 +183,7 @@ a:hover{
     height: 100%;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .circle {
     /* --sample-color: 121 165 205; */
