@@ -146,6 +146,33 @@ img{
     line-height: 2;
 }
 
+.equi-section{
+    --section-gap: 5em;
+    /* width: 700px; */
+    margin-top: var(--section-margin);
+    gap: var(--section-gap);
+}
+
+.equi-area{
+    width: 40%;
+}
+
+.equi-content{
+    margin-top: 2em;
+}
+
+.equi-img{
+    width: 100%;
+    height: 100%;
+    margin-top: 2em;
+}
+
+.equi-title{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
 .footer {
     position: relative;
     background: rgb(236, 240, 242, 0.6);

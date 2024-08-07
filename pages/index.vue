@@ -39,11 +39,14 @@
                 <p>研究設備</p>
             </div>
 
-            <div class="equi-section">
-                <div class="equi-area">
-                    <div class="equi-section">
-                        <p class="equi-title"></p>
-                    </div>
+            <div class="equi-section flex">
+                <EquipmentsCard
+                title="ナノ薄膜を形成するための真空装置"
+                content="マスク交換システムおよびプラズマ源付き電子ビーム薄膜蒸着装置で、試料を大気中に一度も暴露させずに（＝汚れない）パターニングされたデバイスを作製可能です。"
+                imageSrc="/img/equi/zu1/1-1.webp"
+                />
+                <div>
+                    <MoreButton text="Equipments" link="/equipments"/>
                 </div>
             </div>
         </div>
