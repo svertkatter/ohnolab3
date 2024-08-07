@@ -148,6 +148,7 @@ a:hover{
     padding: 3% var(--page-padding);
     margin-top: 20%;
     z-index: 2;
+    
     .div {
         &:first-child {
             margin-right: 10%;
