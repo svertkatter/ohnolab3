@@ -231,13 +231,65 @@ img{
     }
 }
 
-.equi-article{
+.equi-article {
     --section-margin: 5em;
     margin-top: var(--section-margin);
-    
-    .section-equi-content{
-        --section-margin: 3em;
+
+    .section-content {
+        display: flex;
+        gap: 5em;
+        align-items: flex-start; /* 上揃えにします */
+    }
+
+    .section-equi {
+        flex: 1;
+    }
+
+    .section-equi-content {
+        --section-margin: 5em;
         margin-top: var(--section-margin);
+    }
+
+    .img-area {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 20%; /* ここで画像エリア全体の幅を指定します */
+    }
+
+    .center-img {
+        width: 40%; /* 中央の画像の幅を指定します */
+        flex-shrink: 0;
+    }
+
+    .center-img-flex{
+        display: flex;
+        width: 40%;
+        flex-shrink: 0;
+        gap: 2em;
+
+        img{
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    .center-img img, .img-area img {
+        width: 100%; /* 画像を親要素の幅に合わせます */
+        height: auto; /* 高さは自動調整 */
+        object-fit: cover; /* 画像を枠内に収める */
+        flex-shrink: 0; /* 画像の幅を固定 */
+    }
+
+    .img-warm{
+        display: flex;
+        width: 100%;
+        align-items: end;
+        gap: 1em;
+
+        img{
+            width: 50%;
+        }
     }
 }
 

@@ -23,7 +23,7 @@
                     <p>〒870-1192<br />大分県大分市大字旦野原700番地</p>
                     <p>大野研究室　理工13号館（30） 2階</p>
                 </div>
-                <div class="cont"><small>Copyright © 2024 Ohno’s Lab., Oita University, All rights reserved.</small></div>
+                <div class="cont"><small>Copyright &copy; 2024 Ohno’s Lab., Oita University, All rights reserved.</small></div>
             </div>
         </footer>
 </template>
