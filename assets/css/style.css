@@ -5,6 +5,7 @@
     --section-margin: 2em;
     --section-gap: 5em;
     --page-padding: 10em;
+    --radius: 8px;
 }
 
 body{
@@ -39,7 +40,7 @@ a:hover{
 }
 
 img{
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 
 .flex{
