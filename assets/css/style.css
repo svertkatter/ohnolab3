@@ -293,6 +293,52 @@ img{
     }
 }
 
+.member-article{
+    .link-button-area{
+        margin-top: var(--section-margin);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .margin-top{
+        margin-top: 3em;
+    }
+
+    .member-area{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        column-gap: 20px;
+        /* gap: 2em; */
+
+    }
+
+    .member-section{
+        --section-margin: 5em;
+    }
+
+    .professor{
+        margin-top: 0.5em;
+    }
+}
+
+.paper-button{
+    padding: 1em 2em;
+    background: rgb(252, 253, 255, 0.6);
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    border-radius: var(--radius);
+    display: block;
+    font-weight: 700;
+
+    &:hover{
+        opacity: 1;
+        color: var(--base-color);
+        background: rgb(55, 60, 56);
+    }
+}
+
 .footer {
     position: relative;
     background: rgb(236, 240, 242, 0.6);
