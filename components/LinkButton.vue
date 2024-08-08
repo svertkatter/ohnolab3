@@ -1,13 +1,13 @@
 <template>
         <!-- 内部リンクの場合 -->
-        <NuxtLink v-if="isInternalLink" :to="link" class="paper-button" target="_blank" rel="noopener noreferrer">
-            <NuxtImg v-if="icon" :src="icon" alt="icon" class="icon" />
+        <NuxtLink v-if="isInternalLink" :to="link" class="paper-button">
+            <NuxtImg v-if="icon" :src="icon"/>
             {{ text }}
         </NuxtLink>
 
         <!-- 外部リンクの場合 -->
         <a v-else :href="link" class="paper-button" target="_blank" rel="noopener noreferrer">
-            <NuxtImg v-if="icon" :src="icon" alt="icon" class="icon" />
+            <NuxtImg v-if="icon" :src="icon"/>
             {{ text }}
         </a>
 </template>
