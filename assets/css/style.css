@@ -359,6 +359,20 @@ img{
     }
 }
 
+.access-article{
+    .access-section{
+        --section-margin: 5em;
+    }
+
+    .access-content{
+        --section-margin: 2em;
+    }
+
+    .access-room{
+        margin-top: 2em;
+    }
+}
+
 .paper-button{
     padding: 1em 2em;
     background: rgb(252, 253, 255, 0.6);
@@ -374,6 +388,10 @@ img{
         opacity: 1;
         color: var(--base-color);
         background: rgb(55, 60, 56);
+
+        img{
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(104%) contrast(103%);
+        }
     }
 
     img{
