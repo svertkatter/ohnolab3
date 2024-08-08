@@ -51,4 +51,11 @@ export default defineNuxtConfig({
     ],
 
     modules: ["@nuxt/image"],
+    runtimeConfig: {
+            EMAIL_USER: process.env.NUXT_EMAIL_USER,
+            EMAIL_PASS: process.env.NUXT_EMAIL_PASS,
+            EMAIL_USER_DEBUG: process.env.NUXT_EMAIL_USER_DEBUG,
+            EMAIL_PASS_DEBUG: process.env.NUXT_EMAIL_PASS_DEBUG    
+        
+      },
 })

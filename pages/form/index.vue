@@ -6,6 +6,10 @@
                 <p>お問い合わせフォーム</p>
             </div>
 
+            <div>
+                <ContactForm/>
+            </div>
+
             <div class="button-back"><BackButton/></div>
 
             
