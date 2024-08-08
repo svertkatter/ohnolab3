@@ -226,6 +226,12 @@ img{
     justify-content: end;
 }
 
+.researches-article{
+    .section-content{
+        --section-margin: 5em;
+    }
+}
+
 .footer {
     position: relative;
     background: rgb(236, 240, 242, 0.6);

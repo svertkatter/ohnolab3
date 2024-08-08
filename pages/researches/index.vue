@@ -1,5 +1,5 @@
 <template>
-    <article class="container">
+    <article class="container researches-article">
         <div class="section">
             <div class="section-title">
                 <h2>Researches</h2>
@@ -20,9 +20,29 @@
             link="https://advances.sciencemag.org/content/4/2/eaar2250"
             title="Current-induced magnetization switching using an electrically insulating spin-torque generator"
             author="Hongyu An, Takeo Ohno, Yusuke Kanno, Yuito Kageyama, Yasuaki Monnai, Hideyuki Maki, Ji Shi, and Kazuya Ando"
-            publish="Nanotechnology 31, 26LT01 (2020)."
+            publish="Science Advances 4, eaar2250 (2018)."
             content="空間反転対称性の破れを用いることで、金属酸化物絶縁体を用いたスピン軌道トルク生成と 磁化制御を実現しました。さらに、金属酸化物中の酸素を電場により移動させることで、 強磁性金属/金属酸化物界面におけるスピン軌道トルクの不揮発な電気的制御に成功しました。"
             />
+
+            <PapersCard
+            imageSrc="/img/paper/AppliedPhysicsLetters.webp"
+            link="https://doi.org/10.1063/1.4919724"
+            title="Resistive switching in a few nanometers thick tantalum oxide film formed by a metal oxidation"
+            author="Takeo Ohno and Seiji Samukawa"
+            publish="Applied Physics Letters 106, 173110 (2015)."
+            content="金属酸化の手法を用いて作製した数ナノメートルという非常に薄いタンタル酸化膜をもつ抵抗変化型メモリにおいて、スイッチング動作を実証しました。スイッチング時には、0.2Vという低い動作電圧とマルチレベル・スイッチング動作を得ました。"
+            />
+
+            <PapersCard
+            imageSrc="/img/paper/z02.webp"
+            link="https://www.nature.com/articles/nmat3054"
+            title="Short-term plasticity and long-term potentiation mimicked in single inorganic synapses"
+            author="Takeo Ohno, Tsuyoshi Hasegawa, Tohru Tsuruoka, Kazuya Terabe, James K. Gimzewski & Masakazu Aono"
+            publish="Nature Materials volume 10, pages591-595 (2011)."
+            content="トランジスタや回路設計などを用いることなく材料自身がが電気信号の入力頻度 を判断してシナプス応答するデバイス動作の実現に成功しました。また、忘却曲線や記憶のマルチ貯蔵モデルといった心理学モデルの再現にも成功しました。"
+            />
+
+
 
             
         </div>
