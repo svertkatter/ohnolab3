@@ -10,7 +10,7 @@
                     <div class="div">
                         <li><NuxtLink to="/researches">Researches</NuxtLink></li>
                         <li><NuxtLink to="/equipments">Equipments</NuxtLink></li>
-                        <li><NuxtLink to="/activites">Activities</NuxtLink></li>
+                        <li><NuxtLink to="/activities">Activities</NuxtLink></li>
                     </div>
                     <div class="div">
                         <li><NuxtLink to="/members">Member</NuxtLink></li>

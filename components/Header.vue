@@ -9,7 +9,7 @@
                 <ul class="flex list">
                     <li><NuxtLink to="/researches">Researches</NuxtLink></li>
                     <li><NuxtLink to="/equipments">Equipments</NuxtLink></li>
-                    <li><NuxtLink to="/activites">Activities</NuxtLink></li>
+                    <li><NuxtLink to="/activities">Activities</NuxtLink></li>
                     <li><NuxtLink to="/members">Member</NuxtLink></li>
                     <li><NuxtLink to="/room">Room</NuxtLink></li>
                     <li><NuxtLink to="/access">Access</NuxtLink></li>

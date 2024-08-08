@@ -1,9 +1,9 @@
 <template>
-    <article class="container access-article">
+    <article class="container activities-article">
         <div class="section">
             <div class="section-title">
-                <h2>Access</h2>
-                <p>アクセス</p>
+                <h2>Activities</h2>
+                <p>活動実績</p>
             </div>
 
             <div class="button-back"><BackButton/></div>
