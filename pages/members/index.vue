@@ -17,19 +17,19 @@
                 </div>
                 <p class="member-content-en">Electrical Power and Electronics Program, Department of Science and Technology, Faculty of Science and Technology, Oita University (concurrently) Division of Electrical and Electronic Engineering, Department of Engineering, Graduate School of Engineering, Oita University</p>
                 <div class="link-button-area">
-                    <PapersLinkButton link="https://publons.com/researcher/2769392/takeo-ohno" text="publons"/>
+                    <LinkButton link="https://publons.com/researcher/2769392/takeo-ohno" text="publons"/>
 
-                    <PapersLinkButton link="https://www.scopus.com/authid/detail.uri?authorId=7402659251" text="Scopus"/>
+                    <LinkButton link="https://www.scopus.com/authid/detail.uri?authorId=7402659251" text="Scopus"/>
 
-                    <PapersLinkButton link="https://scholar.google.com/citations?user=RSKRq7wAAAAJ&hl=EN" text="Google Scholar"/>
+                    <LinkButton link="https://scholar.google.com/citations?user=RSKRq7wAAAAJ&hl=EN" text="Google Scholar"/>
 
-                    <PapersLinkButton link="https://orcid.org/0000-0001-9990-5544" text="ORCiD"/>
+                    <LinkButton link="https://orcid.org/0000-0001-9990-5544" text="ORCiD"/>
 
-                    <PapersLinkButton link="https://jglobal.jst.go.jp/detail/?JGLOBAL_ID=200901012863419430" text="J-GLOBAL"/>
+                    <LinkButton link="https://jglobal.jst.go.jp/detail/?JGLOBAL_ID=200901012863419430" text="J-GLOBAL"/>
 
-                    <PapersLinkButton link="https://nrid.nii.ac.jp/ja/nrid/1000090447144/" text="KAKEN"/>
+                    <LinkButton link="https://nrid.nii.ac.jp/ja/nrid/1000090447144/" text="KAKEN"/>
 
-                    <PapersLinkButton link="https://researchmap.jp/read0103300" text="researchmap"/>
+                    <LinkButton link="https://researchmap.jp/read0103300" text="researchmap"/>
                 </div>
             </div>
 
