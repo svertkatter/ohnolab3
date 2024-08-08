@@ -270,6 +270,11 @@ img{
     }
 }
 
+.button-back{
+    --section-margin: 10em;
+    margin-top: var(--section-margin);
+}
+
 .buttonLink {
     display: flex;
     padding: 1em 2em;
@@ -299,7 +304,11 @@ img{
     &:hover .arrowRight{
         width: 10em;
         color: var(--main-color);
+    }
 
+    &:hover .arrowLeft{
+        width: 10em;
+        color: var(--main-color);
     }
 
     a{
@@ -334,6 +343,33 @@ img{
         position: absolute;
         top: 50%;
         right: -0.05em;
+        box-sizing: border-box;
+    }
+}
+
+.arrowLeft {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--base-color);
+    line-height: 1;
+    position: relative;
+    width: 2em;
+    height: 0.1em;
+    background: currentColor;
+    transition: .3s all;
+
+    &::before {
+        content: '';
+        width: 0.65em;
+        height: 0.65em;
+        border: 0.1em solid currentColor;
+        border-left: 0;
+        border-bottom: 0;
+        transform: rotate(-135deg);
+        transform-origin: top left;
+        position: absolute;
+        top: 0.5em;
+        left: 0.3em;
         box-sizing: border-box;
     }
 }
