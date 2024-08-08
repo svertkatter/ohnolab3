@@ -107,7 +107,6 @@ img{
 }
 
 .section-content{
-    display: flex;
     margin-top: var(--section-margin);
     gap: var(--section-gap);
 }
@@ -229,6 +228,16 @@ img{
 .researches-article{
     .section-content{
         --section-margin: 5em;
+    }
+}
+
+.equi-article{
+    --section-margin: 5em;
+    margin-top: var(--section-margin);
+    
+    .section-equi-content{
+        --section-margin: 3em;
+        margin-top: var(--section-margin);
     }
 }
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="section-content">
+    <div class="section-content flex">
                 <div class="paper-img">
                     <NuxtImg :src="imageSrc" alt="paper" />
                 </div>

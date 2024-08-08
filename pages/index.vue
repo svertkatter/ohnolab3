@@ -13,7 +13,7 @@
                 <p>最新の研究&業績</p>
             </div>
 
-            <div class="section-content">
+            <div class="section-content flex">
                 <div class="paper-img">
                     <NuxtImg src="/img/paper/Nanotechnology.webp" alt="paper" />
                 </div>
