@@ -25,7 +25,7 @@
                 <div class="access-content">
                     <p>見学、研究相談、共同研究、試料の試作、このサイトのご意見・ご質問などは以下のお問い合わせフォームより受け付けております。</p>
                     <div class="access-room">
-                        <LinkButton link="https://forms.gle/6Kwqg9nqYpXsGwQq6" text="お問い合わせフォーム"/>
+                        <LinkButton link="/form" text="お問い合わせフォーム" icon="/img/icon/mail.svg"/>
                     </div>
                 </div>
             </div>

@@ -365,13 +365,21 @@ img{
     backdrop-filter: blur(10px);
     width: fit-content;
     border-radius: var(--radius);
-    display: block;
+    display: flex;
     font-weight: 700;
+    gap: .5em;
+    align-items: center;
 
     &:hover{
         opacity: 1;
         color: var(--base-color);
         background: rgb(55, 60, 56);
+    }
+
+    img{
+        width: 20px;
+        height: 20px;
+        border-radius: 0;
     }
 }
 
