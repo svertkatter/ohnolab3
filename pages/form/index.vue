@@ -6,7 +6,7 @@
                 <p>お問い合わせフォーム</p>
             </div>
 
-            <div>
+            <div class="form-section">
                 <ContactForm/>
             </div>
 

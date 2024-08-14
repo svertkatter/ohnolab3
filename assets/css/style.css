@@ -373,6 +373,12 @@ img{
     }
 }
 
+.form-article{
+    .form-section{
+        margin-top: 5em;
+    }
+}
+
 .paper-button{
     padding: 1em 2em;
     background: rgb(252, 253, 255, 0.6);
