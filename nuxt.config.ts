@@ -50,7 +50,10 @@ export default defineNuxtConfig({
       '@/assets/css/style.css'
     ],
 
-    modules: ["@nuxt/image"],
+    modules: [
+      "@nuxt/image",
+      "@nuxt/content"
+    ],
     runtimeConfig: {
             EMAIL_USER: process.env.NUXT_EMAIL_USER,
             EMAIL_PASS: process.env.NUXT_EMAIL_PASS,
