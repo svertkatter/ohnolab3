@@ -121,7 +121,7 @@
             </div>
 
             <div class="more">
-                <MoreButton text="Room" link="/room"/>
+                <MoreButton text="Access" link="/access"/>
             </div>
         </div>
 
