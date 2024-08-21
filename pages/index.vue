@@ -62,6 +62,24 @@
                 <h2>Activities</h2>
                 <p>活動実績</p>
             </div>
+
+            <div class="act-section">
+                <ActCard
+                imgSrc="/img/act/2024/240810/240810.webp"
+                title="オープンキャンパスで研究室の紹介を行いました。"
+                date="2024年8月10日"
+                />
+
+                <ActCard
+                imgSrc="/img/act/2023/240315/table240315.webp"
+                title="実験台を設置しました。"
+                date="2024年3月15日"
+                />
+            </div>
+
+            <div class="more">
+                <MoreButton text="Activities" link="/activities"/>
+            </div>
         </div>
 
         <div class="section">

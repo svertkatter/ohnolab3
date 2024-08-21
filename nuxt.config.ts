@@ -52,7 +52,7 @@ export default defineNuxtConfig({
 
     modules: [
       "@nuxt/image",
-      "@nuxt/content"
+      // "@nuxt/content"
     ],
     runtimeConfig: {
             EMAIL_USER: process.env.NUXT_EMAIL_USER,
