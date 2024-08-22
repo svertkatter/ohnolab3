@@ -64,7 +64,7 @@
             </div>
 
             <div class="act-section">
-                <ActCard
+                <!-- <ActCard
                 imgSrc="/img/act/2024/240810/240810.webp"
                 title="オープンキャンパスで研究室の紹介を行いました。"
                 date="2024年8月10日"
@@ -74,7 +74,8 @@
                 imgSrc="/img/act/2023/240315/table240315.webp"
                 title="実験台を設置しました。"
                 date="2024年3月15日"
-                />
+                /> -->
+                <LatestAct/>
             </div>
 
             <div class="more">
