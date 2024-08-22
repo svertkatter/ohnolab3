@@ -158,11 +158,13 @@ img{
     /* width: 700px; */
     margin-top: var(--section-margin);
     gap: var(--section-gap);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
-.equi-area{
+/* .equi-area{
     width: 40%;
-}
+} */
 
 .equi-content{
     margin-top: 2em;
