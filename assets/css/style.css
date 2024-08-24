@@ -8,47 +8,50 @@
     --radius: 8px;
 }
 
-body{
+body {
     font-family: "IBM Plex Sans JP", sans-serif;
     background: var(--base-color);
     color: var(--main-color);
-    overflow-wrap: anywhere; /* 収まらない場合に折り返す */
-    word-break: normal; /* 単語の分割はデフォルトに依存 */
-    line-break: strict; /* 禁則処理を厳格に適用 */
+    overflow-wrap: anywhere;
+    /* 収まらない場合に折り返す */
+    word-break: normal;
+    /* 単語の分割はデフォルトに依存 */
+    line-break: strict;
+    /* 禁則処理を厳格に適用 */
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-li{
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
     color: var(--main-color);
     transition: all .3s;
 }
 
-a:hover{
+a:hover {
     opacity: 0.5;
     transition: all .3s;
 }
 
-img{
+img {
     border-radius: var(--radius);
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.logo{
-    width:20%;
+.logo {
+    width: 20%;
     height: auto;
     filter: invert(13%) sepia(99%) saturate(7480%) hue-rotate(198deg) brightness(95%) contrast(103%);
 }
@@ -63,8 +66,8 @@ img{
     font-size: 14px;
     z-index: 2;
 
-    .list{
-        li{
+    .list {
+        li {
             margin-left: 20px;
         }
     }
@@ -106,35 +109,35 @@ img{
     margin-top: 10em;
 }
 
-.section-content{
+.section-content {
     margin-top: var(--section-margin);
     gap: var(--section-gap);
 }
 
-.paper-img{
+.paper-img {
     width: 30%;
     height: auto;
     flex-shrink: 0;
 
-    img{
+    img {
         width: 100%;
         height: auto;
         object-fit: cover;
     }
 }
 
-.paper-container{
+.paper-container {
     gap: 2em;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.paper{
+.paper {
     flex: 1;
 }
 
-.paper-title{
-    a{
+.paper-title {
+    a {
         font-size: 25px;
         font-weight: 700;
         color: var(--accent-color);
@@ -153,7 +156,7 @@ img{
     line-height: 2;
 }
 
-.equi-section{
+.equi-section {
     --section-gap: 5em;
     /* width: 700px; */
     margin-top: var(--section-margin);
@@ -166,12 +169,12 @@ img{
     width: 40%;
 } */
 
-.equi-content{
+.equi-content {
     margin-top: 2em;
     height: 5em;
 }
 
-.equi-img{
+.equi-img {
     width: 100%;
     height: 100%;
     margin-top: 2em;
@@ -180,55 +183,56 @@ img{
 .member-section,
 .room-section,
 .access-section,
-.access-content{
+.access-content {
     margin-top: var(--section-margin);
 }
 
-.member-content{
+.member-content {
     font-weight: 500;
-    p{
+
+    p {
         margin-top: 1em;
     }
 }
 
-.member-content-en{
+.member-content-en {
     margin-top: 2em;
 }
 
-.professor{
+.professor {
     font-size: 20px;
     font-weight: 700;
 }
 
 .room-img,
-.map-img{
+.map-img {
     margin-top: 2em;
-    
-    img{
+
+    img {
         width: 60%;
         height: 100%;
     }
 }
 
-.access-room{
+.access-room {
     margin-top: 1em;
 }
 
-.blue-title{
+.blue-title {
     font-size: 25px;
     font-weight: 700;
     color: var(--accent-color);
 }
 
-.more{
+.more {
     display: flex;
     width: 100%;
     margin-top: 2em;
     justify-content: end;
 }
 
-.researches-article{
-    .section-content{
+.researches-article {
+    .section-content {
         --section-margin: 5em;
     }
 }
@@ -240,7 +244,8 @@ img{
     .section-content {
         display: flex;
         gap: 5em;
-        align-items: flex-start; /* 上揃えにします */
+        align-items: flex-start;
+        /* 上揃えにします */
     }
 
     .section-equi {
@@ -256,47 +261,54 @@ img{
         display: flex;
         flex-direction: column;
         gap: 1em;
-        width: 20%; /* ここで画像エリア全体の幅を指定します */
+        width: 20%;
+        /* ここで画像エリア全体の幅を指定します */
     }
 
     .center-img {
-        width: 40%; /* 中央の画像の幅を指定します */
+        width: 40%;
+        /* 中央の画像の幅を指定します */
         flex-shrink: 0;
     }
 
-    .center-img-flex{
+    .center-img-flex {
         display: flex;
         width: 40%;
         flex-shrink: 0;
         gap: 2em;
 
-        img{
+        img {
             width: 50%;
             height: auto;
         }
     }
 
-    .center-img img, .img-area img {
-        width: 100%; /* 画像を親要素の幅に合わせます */
-        height: auto; /* 高さは自動調整 */
-        object-fit: cover; /* 画像を枠内に収める */
-        flex-shrink: 0; /* 画像の幅を固定 */
+    .center-img img,
+    .img-area img {
+        width: 100%;
+        /* 画像を親要素の幅に合わせます */
+        height: auto;
+        /* 高さは自動調整 */
+        object-fit: cover;
+        /* 画像を枠内に収める */
+        flex-shrink: 0;
+        /* 画像の幅を固定 */
     }
 
-    .img-warm{
+    .img-warm {
         display: flex;
         width: 100%;
         align-items: end;
         gap: 1em;
 
-        img{
+        img {
             width: 50%;
         }
     }
 }
 
-.member-article{
-    .link-button-area{
+.member-article {
+    .link-button-area {
         margin-top: var(--section-margin);
         width: 100%;
         display: flex;
@@ -304,11 +316,11 @@ img{
         gap: 2em;
     }
 
-    .margin-top{
+    .margin-top {
         margin-top: 3em;
     }
 
-    .member-area{
+    .member-area {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         column-gap: 20px;
@@ -316,44 +328,46 @@ img{
 
     }
 
-    .member-section{
+    .member-section {
         --section-margin: 5em;
     }
 
-    .professor{
+    .professor {
         margin-top: 0.5em;
     }
 }
 
-.room-article{
-    .section-content{
+.room-article {
+    .section-content {
         --section-margin: 5em;
     }
 
-    .section-room{
-        p{
+    .section-room {
+        p {
             margin-top: 1em;
         }
     }
 
 
-    .room-img{
+    .room-img {
         width: 70%;
         height: 700px;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
 
-    .room-img-another{
+    .room-img-another {
         margin-top: 2em;
         display: flex;
         width: 70%;
         height: auto;
         gap: 2em;
-        img{
+
+        img {
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -361,78 +375,93 @@ img{
     }
 }
 
-.access-article{
-    .access-section{
+.access-article {
+    .access-section {
         --section-margin: 5em;
     }
 
-    .access-content{
+    .access-content {
         --section-margin: 2em;
     }
 
-    .access-room{
+    .access-room {
         margin-top: 2em;
     }
 }
 
-.form-article{
-    .form-section{
+.form-article {
+    .form-section {
         margin-top: 5em;
     }
 }
 
-.activities-article{
-    .yearly-section{
+.activities-article {
+    .yearly-section {
         --section-margin: 5em;
         margin-top: var(--section-margin);
     }
 }
 
-.yearly-act{
+.yearly-act {
     .year {
         position: relative;
         display: inline-block;
-        width: 110px; /* セレクトボックスの幅を調整 */
-      }
-      
-      .select-year {
-        appearance: none; /* デフォルトの矢印を非表示に */
+        width: 110px;
+        /* セレクトボックスの幅を調整 */
+    }
+
+    .select-year {
+        appearance: none;
+        /* デフォルトの矢印を非表示に */
         -webkit-appearance: none;
         -moz-appearance: none;
-        background-color: #ecf0f2; /* 背景色を指定 */
-        color: #0056b3; /* テキストの色 */
-        padding: 10px 30px 10px 20px; /* パディングを指定、右側に矢印分のスペースを確保 */
-        border: none; /* 枠線を非表示 */
-        border-radius: 8px; /* 角を丸くする */
+        background-color: #ecf0f2;
+        /* 背景色を指定 */
+        color: #0056b3;
+        /* テキストの色 */
+        padding: 10px 30px 10px 20px;
+        /* パディングを指定、右側に矢印分のスペースを確保 */
+        border: none;
+        /* 枠線を非表示 */
+        border-radius: 8px;
+        /* 角を丸くする */
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
-        width: 100%; /* ボックス全体をカバーするように幅を100%に */
-        position: relative; /* 矢印の配置に必要 */
-      }
-      
-      .year::after {
-        content: ''; /* ボーダーで矢印を作成 */
+        width: 100%;
+        /* ボックス全体をカバーするように幅を100%に */
+        position: relative;
+        /* 矢印の配置に必要 */
+    }
+
+    .year::after {
+        content: '';
+        /* ボーダーで矢印を作成 */
         position: absolute;
-        right: 20px; /* 右端に配置 */
+        right: 20px;
+        /* 右端に配置 */
         top: 50%;
         width: 0.7em;
-  height: 0.7em;
-  border: 2px solid currentColor;
-  border-left: 0;
-  border-bottom: 0;
-  box-sizing: border-box;
-  transform: translateY(-75%) rotate(135deg);
-        pointer-events: none; /* 矢印部分のクリックを無効に */
-        z-index: 2; /* 矢印を前面に表示 */
-      }
-      
-      .select-year:focus {
-        outline: none; /* フォーカス時のアウトラインを非表示に */
-        box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* フォーカス時の影を追加 */
-      }
+        height: 0.7em;
+        border: 2px solid currentColor;
+        border-left: 0;
+        border-bottom: 0;
+        box-sizing: border-box;
+        transform: translateY(-75%) rotate(135deg);
+        pointer-events: none;
+        /* 矢印部分のクリックを無効に */
+        z-index: 2;
+        /* 矢印を前面に表示 */
+    }
 
-    .act-list{
+    .select-year:focus {
+        outline: none;
+        /* フォーカス時のアウトラインを非表示に */
+        box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+        /* フォーカス時の影を追加 */
+    }
+
+    .act-list {
         margin-top: 2em;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -440,7 +469,7 @@ img{
     }
 }
 
-.act-section{
+.act-section {
     --section-gap: 5em;
     margin-top: var(--section-margin);
     display: grid;
@@ -448,7 +477,7 @@ img{
     gap: var(--section-gap);
 }
 
-.act-card{
+.act-card {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
     /* grid-template-columns: 1fr; */
@@ -459,12 +488,13 @@ img{
     /* justify-content: start; */
     align-self: start;
     height: 100%;
-    
-    .act-img{
+
+    .act-img {
         width: 100%;
         height: 400px;
+
         /* object-fit: cover; */
-        img{
+        img {
             width: 100%;
             height: 100%;
             border-radius: var(--radius) var(--radius) 0 0;
@@ -472,24 +502,24 @@ img{
         }
     }
 
-    .act-content{
+    .act-content {
         padding: 3em;
         display: grid;
         gap: 2em;
         grid-template-rows: 1fr auto;
 
-        .act-title{
+        .act-title {
             font-size: 18px;
             font-weight: 700;
         }
 
-        .date{
+        .date {
             align-items: end;
         }
     }
 }
 
-.paper-button{
+.paper-button {
     padding: 1em 2em;
     background: rgb(252, 253, 255, 0.6);
     backdrop-filter: blur(10px);
@@ -500,17 +530,17 @@ img{
     gap: .5em;
     align-items: center;
 
-    &:hover{
+    &:hover {
         opacity: 1;
         color: var(--base-color);
         background: rgb(55, 60, 56);
 
-        img{
+        img {
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(62deg) brightness(104%) contrast(103%);
         }
     }
 
-    img{
+    img {
         width: 20px;
         height: 20px;
         border-radius: 0;
@@ -523,21 +553,22 @@ img{
     padding: 3% var(--page-padding);
     margin-top: 20%;
     z-index: 2;
-    
+
     .div {
         &:first-child {
             margin-right: 10%;
         }
+
         li {
             margin-bottom: 10%;
         }
     }
 
-    .logo{
+    .logo {
         width: 100%;
         height: auto;
     }
-    
+
     .logo-area {
         width: 7%;
     }
@@ -549,13 +580,13 @@ img{
     &:last-child {
         padding: 0;
     }
-    
-    p{
+
+    p {
         margin-bottom: 2%;
     }
 }
 
-.button-back{
+.button-back {
     --section-margin: 10em;
     margin-top: var(--section-margin);
 }
@@ -586,17 +617,17 @@ img{
         border: var(--main-color) solid 0.5px;
     }
 
-    &:hover .arrowRight{
+    &:hover .arrowRight {
         width: 10em;
         color: var(--main-color);
     }
 
-    &:hover .arrowLeft{
+    &:hover .arrowLeft {
         width: 10em;
         color: var(--main-color);
     }
 
-    a{
+    a {
         color: var(--base-color);
 
         &:hover {
