@@ -389,6 +389,49 @@ img{
 }
 
 .yearly-act{
+    .year {
+        position: relative;
+        display: inline-block;
+        width: 110px; /* セレクトボックスの幅を調整 */
+      }
+      
+      .select-year {
+        appearance: none; /* デフォルトの矢印を非表示に */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: #ecf0f2; /* 背景色を指定 */
+        color: #0056b3; /* テキストの色 */
+        padding: 10px 30px 10px 20px; /* パディングを指定、右側に矢印分のスペースを確保 */
+        border: none; /* 枠線を非表示 */
+        border-radius: 8px; /* 角を丸くする */
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        width: 100%; /* ボックス全体をカバーするように幅を100%に */
+        position: relative; /* 矢印の配置に必要 */
+      }
+      
+      .year::after {
+        content: ''; /* ボーダーで矢印を作成 */
+        position: absolute;
+        right: 20px; /* 右端に配置 */
+        top: 50%;
+        width: 0.7em;
+  height: 0.7em;
+  border: 2px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateY(-75%) rotate(135deg);
+        pointer-events: none; /* 矢印部分のクリックを無効に */
+        z-index: 2; /* 矢印を前面に表示 */
+      }
+      
+      .select-year:focus {
+        outline: none; /* フォーカス時のアウトラインを非表示に */
+        box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* フォーカス時の影を追加 */
+      }
+
     .act-list{
         margin-top: 2em;
         display: grid;

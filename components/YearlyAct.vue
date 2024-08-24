@@ -1,11 +1,13 @@
 <!-- components/YearlyActs.vue -->
 <template>
     <div class="yearly-act">
-      <select v-model="selectedYear" @change="filterActs">
+        <div class="year">
+            <select v-model="selectedYear" @change="filterActs" class="select-year">
         <option v-for="year in years" :key="year" :value="year">
           {{ year }}
         </option>
       </select>
+        </div>
   
       <div v-if="filteredActs.length" class="act-list">
         <ActCard
