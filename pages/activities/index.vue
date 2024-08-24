@@ -6,6 +6,10 @@
                 <p>活動実績</p>
             </div>
 
+            <div class="yearly-section">
+                <YearlyAct/>
+            </div>
+
             <div class="button-back"><BackButton/></div>
 
             
