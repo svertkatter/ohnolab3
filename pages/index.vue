@@ -14,23 +14,25 @@
             </div>
 
             <div class="section-content flex">
-                <div class="paper-img">
-                    <NuxtImg src="/img/paper/Nanotechnology.webp" alt="paper" />
-                </div>
-                <div class="paper-container flex">
-                    <div class="paper">
-                        <div class="paper-title">
-                            <a href="https://iopscience.iop.org/article/10.1088/1361-6528/ab7fcf" target="_blank" rel="noopener noreferrer">Neutral oxygen irradiation enhanced forming-less ZnO-based transparent analog memristor devices for neuromorphic computing applications</a>
-                        </div>
-                        <div class="paper-author">Firman Mangasa Simanjuntak, Takeo Ohno, Sridhar Chandrasekaran, Tseung-Yuen Tseng and Seiji Samukawa</div>
-                        <div class="paper-publish">Nanotechnology 31, 26LT01 (2020).</div>
-                    </div>
-                    <div class="paper-content">酸素ビームを照射することで膜質が向上したZnO薄膜を持つ全透明アナログメモリスタ素子を試作した結果、未照射の素子と比較して繰り返しスイッチング回数が20倍に増加し、動作電流が10分の1に低減しました。また、この素子を用いてシナプス動作を再現し、その結果を用いて画像認識における精度向上に関する知見を得ました。</div>
-                    <div class="more">
-                        <MoreButton text="Researches" link="/researches"/>
-                    </div>
-                </div>
-            </div>
+      <div class="paper-img">
+        <NuxtImg :src="latestResearch.imageSrc" alt="paper" />
+      </div>
+      <div class="paper-container flex">
+        <div class="paper">
+          <div class="paper-title">
+            <a :href="latestResearch.link" target="_blank" rel="noopener noreferrer">
+              {{ latestResearch.title }}
+            </a>
+          </div>
+          <div class="paper-author">{{ latestResearch.author }}</div>
+          <div class="paper-publish">{{ latestResearch.publish }}</div>
+        </div>
+        <div class="paper-content">{{ latestResearch.content }}</div>
+        <div class="more">
+          <MoreButton text="Researches" link="/researches" />
+        </div>
+      </div>
+    </div>
         </div>
 
         <div class="section">
@@ -146,3 +148,10 @@
 
     </article>
 </template>
+
+<script setup>
+import { researchData } from '~/data/researchData';
+
+// 最新の研究を取得（配列の最初の要素が最新の場合）
+const latestResearch = researchData[0];
+</script>
