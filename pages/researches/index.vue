@@ -6,7 +6,18 @@
                 <p>最新の研究&業績</p>
             </div>
 
-            <PapersCard
+            <div v-for="(paper, index) in researchData" :key="index">
+                <PapersCard
+                :imageSrc="paper.imageSrc"
+                :link="paper.link"
+                :title="paper.title"
+                :author="paper.author"
+                :publish="paper.publish"
+                :content="paper.content"
+                />
+            </div>
+
+            <!-- <PapersCard
             imageSrc="/img/paper/Nanotechnology.webp"
             link="https://iopscience.iop.org/article/10.1088/1361-6528/ab7fcf"
             title="Neutral oxygen irradiation enhanced forming-less ZnO-based transparent analog memristor devices for neuromorphic computing applications"
@@ -40,7 +51,7 @@
             author="Takeo Ohno, Tsuyoshi Hasegawa, Tohru Tsuruoka, Kazuya Terabe, James K. Gimzewski & Masakazu Aono"
             publish="Nature Materials volume 10, pages591-595 (2011)."
             content="トランジスタや回路設計などを用いることなく材料自身がが電気信号の入力頻度 を判断してシナプス応答するデバイス動作の実現に成功しました。また、忘却曲線や記憶のマルチ貯蔵モデルといった心理学モデルの再現にも成功しました。"
-            />
+            /> -->
 
             <div class="button-back"><BackButton/></div>
 
@@ -48,3 +59,7 @@
         </div>
     </article>
 </template>
+
+<script setups>
+import { researchData } from '~/data/researchData';
+</script>
