@@ -60,6 +60,6 @@
     </article>
 </template>
 
-<script setups>
+<script setup>
 import { researchData } from '~/data/researchData';
 </script>
