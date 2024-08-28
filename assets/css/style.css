@@ -798,6 +798,14 @@ img {
         /* --grid-sm-width:200px; */
     }
 
+    body{
+        font-size: 13px;
+    }
+
+    .top{
+        height: calc(100dvh - 15em);
+    }
+
     .full-screen {
         position: fixed;
         top: 0;
