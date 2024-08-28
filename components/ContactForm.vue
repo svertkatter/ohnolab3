@@ -137,6 +137,13 @@ const validatePhone = (phone) => {
           body: JSON.stringify(form.value)
         })
         alert('お問い合わせ内容が送信されました。')
+
+        // フォームをクリア
+      form.value.name = ''
+      form.value.email = ''
+      form.value.phone = ''
+      form.value.subject = ''
+      form.value.message = ''
       } catch (error) {
         console.error('Error:', error)
         alert('送信に失敗しました。もう一度お試しください。')

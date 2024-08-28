@@ -11,8 +11,6 @@ export default defineEventHandler(async (event) => {
     auth: {
         user: config.EMAIL_USER_DEBUG,
         pass: config.EMAIL_PASS_DEBUG // 送信元のメールアドレス
-      //pass: 'nexv jmoc vwdy dmby' // 送信元のメールアドレスのパスワード
-      //pass: 'mzji xtoc gqcu urmr'
     }
   })
 
