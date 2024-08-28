@@ -13,13 +13,27 @@
 import { actData } from '~/data/actData';
 
 // 日付を「YYYY-MM-DD」形式から「YYYY年M月D日」にフォーマットする関数
+// const formatDate = (dateStr) => {
+//   const date = new Date(dateStr);
+//   const year = date.getFullYear();
+//   const month = date.getMonth() + 1; // 月は0から始まるので+1
+//   const day = date.getDate();
+//   return `${year}年${month}月${day}日`;
+// };
+
 const formatDate = (dateStr) => {
+  if (!dateStr) return ''; // 日付がない場合は空文字を返す
   const date = new Date(dateStr);
+  if (isNaN(date.getTime())) {
+    // 日付が正しくパースされない場合は、元の文字列を返す
+    return dateStr;
+  }
   const year = date.getFullYear();
   const month = date.getMonth() + 1; // 月は0から始まるので+1
   const day = date.getDate();
   return `${year}年${month}月${day}日`;
 };
+
 
 // 全てのデータを取得し、配列に変換して日付で昇順ソート
 const allActs = Object.keys(actData)
