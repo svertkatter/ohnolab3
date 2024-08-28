@@ -109,14 +109,22 @@ const closeMenu = () => {
     );
 };
 
-// リンククリック時にメニューを閉じる
+// リンククリック時とロゴクリック時にメニューを閉じる
 onMounted(() => {
     const menuLinks = document.querySelectorAll('.menu-list li a');
+    const logoLink = document.querySelector('.logo');
+
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             closeMenu();
         });
     });
+
+    if (logoLink) {
+        logoLink.addEventListener('click', () => {
+            closeMenu();
+        });
+    }
 });
 
 // const toggleMenu = () => {
