@@ -615,6 +615,11 @@ img {
     .logo-area {
         width: 7%;
     }
+
+    .list{
+        align-items: start;
+        font-weight: 500;
+    }
 }
 
 .cont {
@@ -971,6 +976,19 @@ img {
         .section-content{
             --section-gap: 3em;
             --section-margin: 7em;
+        }
+    }
+
+    .footer{
+        padding: 3em var(--page-padding);
+
+        .logo-area{
+            width: 20%;
+        }
+
+        .list{
+            align-items: start;
+            font-weight: 500;
         }
     }
 }
