@@ -51,15 +51,25 @@
 //   };
 const formatDate = (dateStr) => {
   if (!dateStr) return ''; // 日付がない場合は空文字を返す
-  const date = new Date(dateStr);
-  if (isNaN(date.getTime())) {
-    // 日付が正しくパースされない場合は、元の文字列を返す
+  
+  // ハイフンで区切って日付の部分を抽出
+  const dateParts = dateStr.split('-');
+  
+  if (dateParts.length !== 3) {
+    // 日付形式が期待通りでない場合は、元の文字列を返す
     return dateStr;
   }
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1; // 月は0から始まるので+1
-  const day = date.getDate();
+  
+  const [year, month, day] = dateParts.map(part => parseInt(part, 10));
+
+  // 日付の正当性を確認
+  if (isNaN(year) || isNaN(month) || isNaN(day)) {
+    return dateStr; // 日付が不正な場合は元の文字列を返す
+  }
+
+  const date = new Date(year, month - 1, day); // 月は0から始まるので-1
   return `${year}年${month}月${day}日`;
 };
+
 
   </script>
