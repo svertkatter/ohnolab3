@@ -187,18 +187,24 @@ const validatePhone = (phone) => {
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  .form-group textarea{
+    height: 300px;
+  }
   
   .form-group button {
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 10px 40px;
+    background-color: #005bac;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 999px;
     cursor: pointer;
+    transition: all .3s;
   }
   
   .form-group button:hover {
-    background-color: #0056b3;
+    background-color: #fff;
+    color: #005bac;
   }
   
   .error-message {

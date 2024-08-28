@@ -979,6 +979,17 @@ img {
         }
     }
 
+    .room-article{
+        .room-img{
+            width: 100%;
+            height: auto;
+        }
+
+        .room-img-another{
+            width: 100%;
+        }
+    }
+
     .footer{
         padding: 3em var(--page-padding);
 
@@ -989,6 +1000,12 @@ img {
         .list{
             align-items: start;
             font-weight: 500;
+        }
+    }
+
+    .yearly-act{
+        .act-list{
+            grid-template-columns: 1fr;
         }
     }
 }
