@@ -85,6 +85,40 @@ const toggleMenu = () => {
     }
 };
 
+const closeMenu = () => {
+    const headerElement = document.querySelector('.header');
+    const menuToggleElement = document.querySelector('.menu-toggle');
+    const menuElement = document.querySelector('.menu');
+    const menuListElement = document.querySelector('.menu-list');
+    const menuItems = document.querySelectorAll('.menu-list li');
+
+    // メニューが閉じたときのアニメーション
+    gsap.to(menuItems, 
+        { opacity: 0, y: 20, duration: 0.3, ease: 'power2.in', onComplete: () => {
+            headerElement.classList.remove('full-screen');
+            menuToggleElement.classList.remove('active');
+            document.body.style.overflow = ''; // スクロールを元に戻す
+            
+            // アニメーション終了後に menu--active クラスを削除し、display を none に戻す
+            menuElement.classList.remove('menu--active');
+            menuListElement.style.display = 'none';
+            
+            // メニューを非アクティブ状態に設定
+            menuActive.value = false;
+        }}
+    );
+};
+
+// リンククリック時にメニューを閉じる
+onMounted(() => {
+    const menuLinks = document.querySelectorAll('.menu-list li a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            closeMenu();
+        });
+    });
+});
+
 // const toggleMenu = () => {
 //     menuActive.value = !menuActive.value
 //     const headerElement = document.querySelector('.header');

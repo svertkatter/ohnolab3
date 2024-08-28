@@ -882,9 +882,10 @@ img {
             backdrop-filter: blur(10px); */
             display: none;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            /* align-items: center;
+            justify-content: center; */
             z-index: 3;
+            margin: 15em 5em;
 
             /* .menu-list {
                     opacity: 0;
@@ -896,6 +897,12 @@ img {
 
         .menu-list{
             flex-direction: column;
+            gap: 2em;
+
+            li{
+                font-weight: 700;
+                font-size: 24px;
+            }
         }
 
         .menu--active{
@@ -957,6 +964,13 @@ img {
             img{
                 width: 100%;
             }
+        }
+    }
+
+    .researches-article{
+        .section-content{
+            --section-gap: 3em;
+            --section-margin: 7em;
         }
     }
 }
