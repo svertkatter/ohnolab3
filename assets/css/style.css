@@ -313,7 +313,12 @@ img {
         flex-direction: column;
         gap: 1em;
         width: 20%;
-        /* ここで画像エリア全体の幅を指定します */
+        
+        div{
+            p{
+                margin-top: 1em;
+            }
+        }
     }
 
     .center-img {
@@ -1015,6 +1020,20 @@ img {
         .section-content{
             --section-gap: 3em;
             --section-margin: 7em;
+        }
+    }
+
+    .equi-article{
+        .center-img{
+            width: 100%;
+        }
+
+        .center-img-flex{
+            width: calc(100% - var(--page-padding));
+        }
+
+        .img-area{
+            width: 100%;
         }
     }
 
