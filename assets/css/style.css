@@ -19,7 +19,13 @@ body {
     /* 単語の分割はデフォルトに依存 */
     line-break: strict;
     /* 禁則処理を厳格に適用 */
+    /* opacity: 0;
+    transition: opacity 0.5s ease-in-out; */
 }
+
+/* body.loaded{
+    opacity: 1;
+} */
 
 ul {
     margin: 0;
