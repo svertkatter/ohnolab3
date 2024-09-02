@@ -32,7 +32,7 @@
   const selectedYear = ref('2024'); // 初期値として2024年を選択
   const filteredActs = ref([]);
   
-  const years = Object.keys(actData); // 年度のリストを取得
+  const years = Object.keys(actData).sort((a, b) => b - a); // 年度のリストを取得
   
   const filterActs = () => {
     filteredActs.value = Object.values(actData[selectedYear.value] || []);

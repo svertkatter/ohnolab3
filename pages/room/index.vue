@@ -35,14 +35,14 @@
                 </div>
             </div>
 
-            <div class="section-content">
+            <!-- <div class="section-content">
                 <div class="section-room">
                     <h3 class="blue-title">パソコンもご自由にどうぞ</h3>
                     <div class="room-img">
                         <NuxtImg src="/img/room/room03.webp"/>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="section-content">
                 <div class="section-room">

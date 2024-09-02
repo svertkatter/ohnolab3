@@ -235,7 +235,7 @@ export const actData = {
             date: "2018-08-08",
         },
         "2018-07-11":{
-            imgSrc: "/img/act/2018/1800711/LSI180711.webp",
+            imgSrc: "/img/act/2018/180711/LSI180711.webp",
             title: "大分県LSIクラスター形成推進会議半導体基礎講座が開催され、オオノが講師をしました。",
             date: "2018-07-11",
         },
