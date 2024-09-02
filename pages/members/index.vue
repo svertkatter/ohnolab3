@@ -49,7 +49,7 @@
                         </div>
         
                         <div>
-                            <p>MC1</p>
+                            <p>BC</p>
                             <p class="professor">K.Iwasaki, H.Kawabe, R.Syouma, K.Tosimitu, J.Nakano, S.Hijiya</p>
                         </div>
                     </div>

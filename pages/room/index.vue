@@ -53,6 +53,9 @@
                     <div class="room-img">
                         <NuxtImg src="/img/room/room08.webp"/>
                     </div>
+                    <div class="room-img">
+                        <NuxtImg src="/img/room/room11.webp"/>
+                    </div>
                     <p>プロジェクターを壁に投影でき、みんなで熱心に議論します。</p>
                 </div>
             </div>
