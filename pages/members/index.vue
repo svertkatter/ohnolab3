@@ -41,16 +41,16 @@
                 </div>
 
                 <div class="member-content margin-top">
-                    <p>2023年度の学生</p>
+                    <p>2024年度の学生</p>
                     <div class="member-area">
                         <div>
                             <p>MC2</p>
-                            <p class="professor">G. Takashita</p>
+                            <p class="professor">Y.Saigo, K.Hamada</p>
                         </div>
         
                         <div>
                             <p>MC1</p>
-                            <p class="professor">G. Takashita</p>
+                            <p class="professor">K.Iwasaki, H.Kawabe, R.Syouma, K.Tosimitu, J.Nakano, S.Hijiya</p>
                         </div>
                     </div>
                 </div>
@@ -58,6 +58,20 @@
 
             <div class="member-section">
                 <p class="blue-title">これまでのメンバーと卒業後の進路</p>
+
+                <div class="member-content margin-top">
+                    <p>2023年度の修了生・卒業生と進路</p>
+                    <div class="member-area">
+                            <div>
+                                <p>MC</p>
+                                <p class="professor">G.Takashita</p>
+                            </div>
+                    </div>
+                    <div>
+                        <p>進路</p>
+                        <p class="professor">SCREEN</p>
+                    </div>
+                </div>
 
                 <div class="member-content margin-top">
                     <p>2022年度の修了生・卒業生と進路</p>
