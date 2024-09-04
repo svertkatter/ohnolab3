@@ -1,4 +1,134 @@
 <template>
+  <form @submit.prevent="sendEmail">
+    <div class="form-group">
+      <label for="name">お名前</label>
+      <input
+        type="text"
+        id="name"
+        v-model="form.name"
+        name="name"
+        placeholder="例）大分花子"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">メールアドレス</label>
+      <input
+        type="email"
+        id="email"
+        v-model="form.email"
+        name="email"
+        placeholder="example@example.com"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">電話番号（ハイフン無し）</label>
+      <input
+        type="tel"
+        id="phone"
+        v-model="form.phone"
+        name="phone"
+        placeholder="例）090-000-0000"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="subject">件名</label>
+      <input
+        type="text"
+        id="subject"
+        v-model="form.subject"
+        name="subject"
+        placeholder="件名を入力"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="message">本文</label>
+      <textarea
+        id="message"
+        v-model="form.message"
+        name="message"
+        placeholder="お問い合わせ内容を入力"
+        required
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit">送信</button>
+    </div>
+
+    <div v-if="errorMessage" class="error">{{ errorMessage }}</div>
+    <div v-if="successMessage" class="success">{{ successMessage }}</div>
+  </form>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const form = ref({
+  name: '',
+  email: '',
+  phone: '',
+  subject: '',
+  message: ''
+})
+
+const pending = ref(false)
+const successMessage = ref('')
+const errorMessage = ref('')
+
+const sendEmail = async () => {
+  pending.value = true
+  successMessage.value = ''
+  errorMessage.value = ''
+
+  const formData = new URLSearchParams();
+  formData.append('name', form.value.name);
+  formData.append('email', form.value.email);
+  formData.append('phone', form.value.phone);
+  formData.append('subject', form.value.subject);
+  formData.append('message', form.value.message);
+
+  try {
+    const response = await fetch('/send-email.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: formData.toString(),
+    });
+
+    const result = await response.json();
+
+    if (response.ok && result.status === 'success') {
+      successMessage.value = result.message;
+      form.value = {
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      };
+    } else {
+      errorMessage.value = result.message || 'メール送信に失敗しました。';
+    }
+  } catch (error) {
+    errorMessage.value = '送信中にエラーが発生しました。';
+  } finally {
+    pending.value = false;
+  }
+};
+</script>
+
+
+
+<!-- <template>
   
   <div class="form-group">
         <label for="name">お名前</label>
@@ -116,43 +246,74 @@ const validatePhone = (phone) => {
   const re = /^[0-9]+$/
   return re.test(phone)
 }
-  
-  // フォーム送信時の処理
-  const submitForm = async () => {
-    // 全てのフィールドをバリデート
-    validateField('name')
-    validateField('email')
-    validateField('phone')
-    validateField('subject')
-    validateField('message')
-  
-    // エラーがなければ送信処理を実行
-    if (!Object.values(errors.value).some(error => error !== '')) {
-      try {
-        await fetch('/api/contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(form.value)
-        })
-        alert('お問い合わせ内容が送信されました。')
 
-        // フォームをクリア
-      form.value.name = ''
-      form.value.email = ''
-      form.value.phone = ''
-      form.value.subject = ''
-      form.value.message = ''
-      } catch (error) {
-        console.error('Error:', error)
-        alert('送信に失敗しました。もう一度お試しください。')
-      }
+const submitForm = async () => {
+  try {
+    const response = await fetch('/send-email.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams({
+        name: form.value.name,
+        email: form.value.email,
+        phone: form.value.phone,
+        subject: form.value.subject,
+        message: form.value.message,
+      }),
+    });
+
+    const result = await response.json(); // 正しいJSONレスポンスを期待する
+    if (result.success) {
+      alert(result.message);
+      form.value = { name: '', email: '', phone: '', subject: '', message: '' }; // フォームをクリア
     } else {
-      alert('フォームにエラーがあります。修正してください。')
+      alert(result.message);
     }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('送信に失敗しました。もう一度お試しください。');
   }
-  </script>
+};
+
+
+  
+  //フォーム送信時の処理
+  // const submitForm = async () => {
+  //   // 全てのフィールドをバリデート
+  //   validateField('name')
+  //   validateField('email')
+  //   validateField('phone')
+  //   validateField('subject')
+  //   validateField('message')
+  
+  //   // エラーがなければ送信処理を実行
+  //   if (!Object.values(errors.value).some(error => error !== '')) {
+  //     try {
+  //       await fetch('/api/contact', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json'
+  //         },
+  //         body: JSON.stringify(form.value)
+  //       })
+  //       alert('お問い合わせ内容が送信されました。')
+
+  //       // フォームをクリア
+  //     form.value.name = ''
+  //     form.value.email = ''
+  //     form.value.phone = ''
+  //     form.value.subject = ''
+  //     form.value.message = ''
+  //     } catch (error) {
+  //       console.error('Error:', error)
+  //       alert('送信に失敗しました。もう一度お試しください。')
+  //     }
+  //   } else {
+  //     alert('フォームにエラーがあります。修正してください。')
+  //   }
+  // }
+  </script> -->
   
   <style scoped>
   .container {
@@ -218,4 +379,11 @@ const validatePhone = (phone) => {
     color: #ff0000;
     margin-top: 5px;
   }
+
+  .error {
+  color: red;
+}
+.success {
+  color: green;
+}
   </style>

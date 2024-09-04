@@ -58,11 +58,11 @@ export default defineNuxtConfig({
       "@nuxt/image",
       // "@nuxt/content"
     ],
-    runtimeConfig: {
-            EMAIL_USER: process.env.NUXT_EMAIL_USER,
-            EMAIL_PASS: process.env.NUXT_EMAIL_PASS,
-            EMAIL_USER_DEBUG: process.env.NUXT_EMAIL_USER_DEBUG,
-            EMAIL_PASS_DEBUG: process.env.NUXT_EMAIL_PASS_DEBUG    
+    // runtimeConfig: {
+    //         EMAIL_USER: process.env.NUXT_PUBLIC_EMAIL_USER,
+    //         EMAIL_PASS: process.env.NUXT_PUBLIC_EMAIL_PASS,
+    //         EMAIL_USER_DEBUG: process.env.NUXT_PUBLIC_EMAIL_USER_DEBUG,
+    //         EMAIL_PASS_DEBUG: process.env.NUXT_PUBLIC_EMAIL_PASS_DEBUG    
         
-      },
+    //   },
 })
