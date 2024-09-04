@@ -1,75 +1,20 @@
-# Nuxt 3 Minimal Starter
+# 大野研究室ウェブサイト
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## 構築
+Nuxt 3
 
-## Setup
+## アップロード
 
-Make sure to install the dependencies:
+### 1. ビルド
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+```
+npm run generate
 ```
 
-## Development Server
+を実行。
 
-Start the development server on `http://localhost:3000`:
+`dist`フォルダ内のファイルを全てFTPソフトにアップロード。（その際、画像について下記の注意点を参考）
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 注意点
+### 活動実績の画像について
+`npm run generate`をした後、`_ipx`フォルダに画像が格納されているが、活動実績の全ての画像が出力されない。個人的にプロジェクトフォルダの`public`から画像を全てアップロードする必要がある。
