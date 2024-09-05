@@ -418,14 +418,15 @@ img {
 
     .room-img-another {
         margin-top: 2em;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         width: 70%;
         height: auto;
         gap: 2em;
 
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover;
         }
     }
