@@ -95,8 +95,10 @@ const sendEmail = async () => {
   formData.append('subject', form.value.subject);
   formData.append('message', form.value.message);
 
+  console.log('送信するフォームデータ:', formData.toString()); // フォームデータをコンソールで確認
+
   try {
-    const response = await fetch('/send-email.php', {
+    const response = await fetch('https://ohno.eee.oita-u.ac.jp/send-email.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -104,7 +106,10 @@ const sendEmail = async () => {
       body: formData.toString(),
     });
 
+    console.log('サーバーからの応答:', response); // サーバーの応答を確認
+
     const result = await response.json();
+    console.log('サーバーからの結果:', result); // サーバーからの結果を確認
 
     if (response.ok && result.status === 'success') {
       successMessage.value = result.message;
@@ -119,12 +124,14 @@ const sendEmail = async () => {
       errorMessage.value = result.message || 'メール送信に失敗しました。';
     }
   } catch (error) {
+    console.error('送信中にエラーが発生しました:', error); // エラーをコンソールに表示
     errorMessage.value = '送信中にエラーが発生しました。';
   } finally {
     pending.value = false;
   }
 };
 </script>
+
 
 
 

@@ -7,11 +7,11 @@
             </div>
 
             <div class="form-section">
-                <div>
+                <!-- <div>
                     <p>現在、製作中です。お問い合わせは以下のメールアドレスにてお願いいたします。お問い合わせの際は件名、お名前、メールアドレス、お電話番号をご記入ください。</p>
                     <a href="mailto:shiihara-rie@oita-u.ac.jp?subject=お問い合わせ" class="mail-button">shiihara-rie@oita-u.ac.jp</a>
-                </div>
-                <!-- <ContactForm/> -->
+                </div> -->
+                <ContactForm/>
             </div>
 
             <div class="button-back"><BackButton/></div>
