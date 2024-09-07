@@ -13,7 +13,7 @@
                     <p>准教授 / Associate Professor, PI</p>
                     <p class="professor">大野 武雄　博士（工学） / Takeo Ohno, PhD in Materials Science</p>
                     <p>大分大学理工学部理工学科電気エネルギー・電子工学プログラム
-                        （兼）大分大学大学院工学研究科工学選考電気電子工学コース</p>
+                        （兼）大分大学大学院工学研究科工学専攻電気電子工学コース</p>
                 </div>
                 <p class="member-content-en">Electrical Power and Electronics Program, Department of Science and Technology, Faculty of Science and Technology, Oita University (concurrently) Division of Electrical and Electronic Engineering, Department of Engineering, Graduate School of Engineering, Oita University</p>
                 <div class="link-button-area">
