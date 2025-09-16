@@ -29,7 +29,7 @@
   import { actData } from '~/data/actData'; // actData.js をインポート
   import ActCard from '~/components/ActCard.vue';
   
-  const selectedYear = ref('2024'); // 初期値として2024年を選択
+  const selectedYear = ref('2025'); // 最新の年度に更新するっｃ
   const filteredActs = ref([]);
   
   const years = Object.keys(actData).sort((a, b) => b - a); // 年度のリストを取得
